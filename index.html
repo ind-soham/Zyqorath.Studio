@@ -160,12 +160,42 @@
     </section>
 
     <footer id="contact" class="border-top">
-        <div class="container footer-container section-padding">
-            <div class="footer-cta reveal-up">
-                <h2>INITIATE <br>YOUR PROJECT.</h2>
-                <p class="mt-2">Ready to elevate your digital presence? We are currently accepting new clients.</p>
-                <a href="mailto:zyqorath.studio@gmail.com" class="btn-primary mt-2 hover-scale">Mail us</a>
-            </div>
+        <div class="footer-cta reveal-up">
+            <h2>INITIATE <br>YOUR PROJECT.</h2>
+            <p class="mt-2">Ready to elevate your digital presence? Send us a direct brief below.</p>
+            
+            <form class="agency-form mt-2" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="06648ea4-5098-43f9-95d0-fc76ed679c5f">
+                <input type="hidden" name="subject" value="New Project Inbound Brief | Zyqorath Studio">
+                <input type="hidden" name="from_name" value="Zyqorath Studio Portfolio">
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                <div class="input-row">
+                    <input type="text" name="Client Name" placeholder="Your Name" required>
+                    <input type="email" name="Client Email" placeholder="Your Email" required>
+                </div>
+                <div class="input-row mt-1">
+                    <select name="Requested Project Industry" required>
+                        <option value="" disabled selected>Project / Business Industry</option>
+                        <option value="Gym & Fitness Club">Gym / Fitness / Health Club</option>
+                        <option value="Luxury Salon & Spa">Salon / Luxury Spa / Grooming</option>
+                        <option value="Cafe & Restaurant">Cafe / Artisan Roastery / Fine Dining</option>
+                        <option value="Luxury Real Estate">Luxury Real Estate / Properties</option>
+                        <option value="E-Commerce Brand">D2C / Premium E-Commerce Store</option>
+                        <option value="Tech Startup / SaaS">Tech Startup / SaaS Platform</option>
+                        <option value="Architecture & Interiors">Architecture / High-End Interior Studio</option>
+                        <option value="Medical / Dental Clinic">Premium Medical / Aesthetic Clinic</option>
+                        <option value="Corporate / Legal Firm">Corporate Firm / Legal Consulting</option>
+                        <option value="Creative Agency / Portfolio">Creative Agency / Personal Portfolio</option>
+                        <option value="Custom Complex Venture">Other Complex Business Model</option>
+                    </select>
+                </div>
+                <div class="input-row mt-1">
+                    <textarea name="Project Vision Details" placeholder="Tell us about your project or business goals..." rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary mt-1 hover-scale">Send Project Brief ↗</button>
+            </form>
+        </div>
             
             <div class="footer-links reveal-up delay-1">
                 <div class="link-col">
